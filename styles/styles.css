@@ -8,6 +8,11 @@ body {
 	font-family: 'Poppins', sans-serif;
 }
 
+.top {
+	background-image: url("../images/back.jpg");
+	background-size: cover;
+}
+
 .container {
 	max-width: 2880px;
 	margin: 0 auto;
@@ -329,12 +334,12 @@ nav {
 }
 
 .btn_fab {
-	color: #133a49;
+	color: #ffffff;
 	text-transform: uppercase;
 	font-family: 'Lato', sans-serif;
 	letter-spacing: 5px;
 	font-size: 12px;
-	border: 2px solid #133a49;
+	border: 2px solid #ffffff;
 	padding: 15px 25px;
 	position: relative;
 	cursor: pointer;
@@ -345,7 +350,7 @@ a.btn_fab:hover {
 	animation-duration: .1s;
 	-webkit-animation-delay: .2s;
 	/* Chrome, Safari, Opera */
-	animation-delay: .1.5s;
+	animation-delay: 0.15s;
 	animation-fill-mode: forwards;
 }
 
@@ -354,8 +359,8 @@ a.btn_fab:hover {
 		background: transparent;
 	}
 	100% {
-		background: #133a49;
-		color: #fff;
+		background: #ffffff;
+		color: #133a49;
 	}
 }
 
@@ -366,7 +371,7 @@ a.btn_fab:before {
 	height: 2px;
 	left: 0;
 	top: 22px;
-	background-color: #133a49;
+	background-color: #ffffff;
 	animation-name: right-to-left;
 	animation-duration: .3s;
 }
@@ -452,20 +457,40 @@ a.btn_fab:hover:before {
 /* Custom Scrollbar */
 
 ::-webkit-scrollbar {
-	width: 12px;
-	height: 12px;
+	width: 10px;
+	height: 14px;
 }
 
 ::-webkit-scrollbar-track {
-	background: #f5f5f5;
+	background: #324b5d;
 	border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
 	border-radius: 10px;
-	background: #ccc;
+	background: #143a49;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-	background: #999;
+	background: #143a49;
+}
+
+.parallax {
+	perspective: 1px;
+	height: 100vh;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.parallax__layer {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+.parallax__layer--base {
+	transform: translateZ(0);
+}
+.parallax__layer--back {
+	transform: translateZ(-1px);
 }
