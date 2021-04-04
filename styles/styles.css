@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
 /* Basic Grid Template */
 /* June 7 */ 
 body {
@@ -11,6 +12,11 @@ body {
 .top {
 	background-image: url("../images/back.jpg");
 	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	height: 100vh;
+	overflow-x: hidden;
+	overflow-y: auto;
 }
 
 .container {
@@ -20,7 +26,6 @@ body {
 
 header#top {
 	text-align: center;
-	height: 1000px;
 }
 
 header {
@@ -480,17 +485,5 @@ a.btn_fab:hover:before {
 	height: 100vh;
 	overflow-x: hidden;
 	overflow-y: auto;
-}
-.parallax__layer {
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-}
-.parallax__layer--base {
-	transform: translateZ(0);
-}
-.parallax__layer--back {
-	transform: translateZ(-1px);
+	background-attachment: fixed;
 }
