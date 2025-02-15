@@ -1,105 +1,91 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
-   <head>
-      <title>Beanie</title>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-      <link rel="stylesheet" type="text/css" href="styles/styles.css">
-	  <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
-	  <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
-	  <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
-	  <link rel="manifest" href="icon/site.webmanifest">
-	  <meta name="msapplication-TileColor" content="#da532c">
-     <meta name="theme-color" content="#ffffff">
-   </head>
-   <body>
-      <div class="container">
-          <div class="top">
-         <header id="top" class="animated animatedFadeInUp fadeInUp">
-             <img src="images/BeanieLogowhite.png" alt="logo" style="width: 35%">
-            <div class="wrapper">
-               <nav>
-                  <a href="#explore" class="btn_fab" style="text-decoration: none">Explore</a>
-               </nav>
-            </div>
-             </div>
-         </header>
-         <div class="background" id="explore">
-            <header class="style fade-in">
-               <h1>Meet Beanie</h1>
-               <p>Hey! I'm Beanie! You may know me from <a href="https://cosmic.games">Cosmic</a> where I currently am an Administrator. I hope that you enjoy your stay and join my community <a href="https://discord.fakebeanie.me/">Discord</a>. I stream on <a href="https://twitch.tv/fakebeanie" >Twitch.tv</a> and I hope you can join me while I'm live! </p>
-            </header>
-         </div>
-         <div class="grid-wrapper-equal-thirds style fade-in">
-             <article class="left-third">
-               <img src="images/code.png" alt="IT Svc">
-               <h1>Managed IT Services</h1>
-               <p>Are you in need of a technology upgrade or have a project idea? Let us handle the nerd stuff, so you can avoid expensive downtime and stay focused on being ahead of the competition! </br>
-                   </br>Contact Us: Coming Soon
-               </p>
-            </article>
-            <article class="middle-third">
-               <img src="images/video-camera.png" alt="Video-camera">
-               <h1>Stream</h1>
-               <p>I currently live stream on <a href="https://twitch.tv/fakebeanie" >Twitch.tv</a>,
-			   </br>You may find me playing a variety of diffrent games from AmongUs to Sea of Thieves all the way to Civ V, either way you should stop by and say hi!
-			   </br> To get alerts when I go live, join my <a href="https://discord.fakebeanie.me/">Discord</a> community! </p>
-            </article>
-            <article class="right-third">
-               <img src="images/engagement.png" alt="Engagement">
-               <h1>Interact</h1>
-               <p>Hi, be sure to join my <a href="https://discord.fakebeanie.me/">discord</a> community or check out one of my <a href="https://twitch.tv/fakebeanie" >Twitch.tv</a> streams (down below)! </br>
-			   If you play Cosmic PVP my streams are a good chance to:
-			   <ul>
-			   <li>Voice your concerns.</li>
-			   <li>Participate in exclusive giveaways provided by me!</li>
-			   <li>Watch your friends fail/succeed at in-game events!</li>
-			   </ul>
-			   </p>
-            </article>
-         </div>
-         <div class="grid-wrapper-equal-fourths style fade-in">
-            <article class="one-fourth">
-			<a href="https://twitch.tv/fakebeanie" >
-               <img src="images/twitch.png" alt="twitch">
-			   </a>
-            </article>
-            <article class="one-fourth">
-			<a href="https://discord.gg/xMdsVBj" >
-               <img src="images/discord.png" alt="discord">
-			   </a>
-            </article>
-            <article class="one-fourth">
-			<a href="https://twitter.com/realbeanie__">
-               <img src="images/twitter.png" alt="twitter">
-			   </a>
-            </article>
-            <article class="one-fourth">
-			<a href="https://youtube.com/joshbean39/" >
-               <img src="images/youtube.png" h alt="youtube">
-			</a>
-            </article>
-         </div>
-         <div class="content style fade-in">
-            <a href="https://discord.gg/xMdsVBj" style="color: #1c75bc;">Join my Discord community! &rArr;</a>
-         </div>
-      </div>
-      <div class="splitscreen">
-         <div class="left">
-             <iframe src="https://player.twitch.tv/?channel=fakebeanie&parent=fakebeanie.me" frameborder="0" allowfullscreen="true" scrolling="no" class="twitch_video"></iframe>
-         </div>
-         <div class="right">
-             <iframe
-                     id="chat_embed"
-                     src="https://www.twitch.tv/embed/fakebeanie/chat?parent=fakebeanie.me" frameborder="0" scrolling="no" class="twitch_chat">
-             </iframe>
-         </div>
-      </div>
-      <footer><a href="https://twitter.com/realbeanie__" style="text-decoration: none;">@RealBeanie</a></footer>
-      </div>
-   </body>
-   <script src="js/script.js"></script>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/webp" href="images/beanie.webp">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Its Beanie</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('images/back.jpg') no-repeat center center fixed; background-size: cover;
+            color: #cce7ff;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .container {
+            width: 90%;
+            max-width: 500px;
+            margin: 50px auto;
+            flex: 1;
+        }
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid #13219e;
+        }
+        .name {
+            font-size: 24px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .bio {
+            font-size: 16px;
+            margin: 10px 0 20px;
+        }
+        .link {
+            display: block;
+            background: rgba(22, 56, 61, 0.8);
+            backdrop-filter: blur(5px);
+            color: #cce7ff;
+            text-decoration: none;
+            padding: 12px;
+            border-radius: 25px;
+            margin: 10px auto;
+            width: 80%;
+            font-size: 18px;
+            transition: 0.3s;
+            border: 2px solid #16383d;
+        }
+        .link:hover {
+            background: rgba(22, 56, 61, 1.0);
+            transform: translateY(-3px) scale(1.05);
+        }
+        .link:hover {
+            background-color: #555;
+        }
+        .footer {
+            font-weight: bold;
+            padding: 10px;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(5px);
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            const prefixes = ["", "Not", "Just", "Super", "NOT", "Knot", "Real", "Fake", "Totally not ", "I'm ", "Who is "];
+            let selectedPrefix = prefixes[Math.floor(Math.random() * prefixes.length)];
+            document.getElementById("dynamic-name").textContent = selectedPrefix + "Beanie";
+        };
+    </script>
+</head>
+<body>
+    <div class="container">
+        <img src="images/beanie.webp" alt="Profile Image" class="profile-img">
+        <div class="name" id="dynamic-name">Beanie</div>
+        <div class="bio">Graph Databases 🤖 • Media Tech 🎥 • Theme Parks 🎢</div>
+        <a href="https://x.com/realbeanie__/" class="link">𝕏</a>
+        <a href="https://www.youtube.com/joshbean39" class="link">Youtube</a>
+        <a href="https://www.twitch.tv/fakebeanie" class="link">Twitch</a>
+        <a href="https://www.instagram.com/knotbeanie/" class="link">Instagram</a>
+        <a href="https://github.com/justbeanie" class="link">Github</a>
+    </div>
+    <div class="footer">Made with 🫘 by Beanie</div>
+</body>
 </html>
